@@ -1,0 +1,162 @@
+/// <summary>
+    /// User input treatment
+    /// </summary>
+    public class UIT
+    {
+        
+        
+        /// <summary>
+        /// Return parsed number SBYTE
+        /// </summary>
+        /// <returns>number SBYTE (-128 -> 127  -  8bit)</returns>
+        public static sbyte SByte()
+        {
+            sbyte sbyteOutput;
+            while (!sbyte.TryParse(System.Console.ReadLine().ToLower().Trim(), out sbyteOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return sbyteOutput;
+        }         
+        /// <summary>
+        /// Return parsed number BYTE
+        /// </summary>
+        /// <returns>number BYTE (0 -> 255  -  8bit)</returns>
+        public static byte Byte()
+        {
+            byte byteOutput;
+            while (!byte.TryParse(System.Console.ReadLine().ToLower().Trim(), out byteOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return byteOutput;
+        }         
+        /// <summary>
+        /// Return parsed number SHORT
+        /// </summary>
+        /// <returns>number SHORT (-32 768 -> 32 767  -  16bit)</returns>
+        public static short Short()
+        {
+            short shortOutput;
+            while (!short.TryParse(System.Console.ReadLine().ToLower().Trim(), out shortOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return shortOutput;
+        }         
+        /// <summary>
+        /// Return parsed number USHORT
+        /// </summary>
+        /// <returns>number USHORT (0 -> 65 535  -  16bit)</returns>
+        public static ushort UShort()
+        {
+            ushort ushortOutput;
+            while (!ushort.TryParse(System.Console.ReadLine().ToLower().Trim(), out ushortOutput));
+                System.Console.Write("Invalid input, please try it again:"); 
+            return ushortOutput;
+        }         
+        /// <summary>
+        /// Return parsed number INT
+        /// </summary>
+        /// <returns>number INT (-2 147 483 648 -> 2 147 483 647  -  32bit)</returns>
+        public static int Int()
+        {
+            int intOutput;
+            while (!int.TryParse(System.Console.ReadLine().ToLower().Trim(), out intOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return intOutput;
+        }        
+        /// <summary>
+        /// Return parsed number UINT
+        /// </summary>
+        /// <returns>number UINT (0 -> 4 294 967 295  -  32bit)</returns>
+        public static uint UInt()
+        {
+            uint uintOutput;
+            while (!uint.TryParse(System.Console.ReadLine().ToLower().Trim(), out uintOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return uintOutput;
+        }         
+        /// <summary>
+        /// Return parsed number LONG
+        /// </summary>
+        /// <returns>number LONG (-9 223 372 036 854 775 808 -> 9 223 372 036 854 775 807  -  64bit)</returns>
+        public static long Long()
+        {
+            long longOutput;
+            while (!long.TryParse(System.Console.ReadLine().ToLower().Trim(), out longOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return longOutput;
+        }         
+        /// <summary>
+        /// Return parsed number ULONG
+        /// </summary>
+        /// <returns>number ULONG (0 -> 18 446 744 073 709 551 615  -  64bit)</returns>
+        public static ulong ULong()
+        {
+            ulong ulongOutput;
+            while (!ulong.TryParse(System.Console.ReadLine().ToLower().Trim(), out ulongOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return ulongOutput;
+        } 
+        
+        
+        
+        
+        /// <summary>
+        /// Return parsed number FLOAT
+        /// </summary>
+        /// <returns>number FLOAT (+-1.5 * 10−45 -> +-3.4 * 1038  -  accuracy: 7 numbers)</returns>
+        public static float Float()
+        {
+            float floatOutput;
+            while (!float.TryParse(System.Console.ReadLine().ToLower().Trim(), out floatOutput))
+                System.Console.Write("Invalid input, please try it again:"); 
+            return floatOutput;
+        }      
+        /// <summary>
+        /// Return parsed number DOUBLE
+        /// </summary>
+        /// <returns>number DOUBLE (+-5.0 * 10−324 -> +-1.7 * 10308  -  accuracy: 15-16 numbers)</returns>
+        public static double Double()
+        {
+            double doubleOutput;
+            while (!double.TryParse(System.Console.ReadLine().ToLower().Trim(), out doubleOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return doubleOutput;
+        } 
+        
+        
+        
+        
+        
+        /// <summary>
+        /// Return parsed character CHAR
+        /// </summary>
+        /// <returns>character CHAR (U+0000 -> U+ffff  -  16 bit)</returns>
+        public static char Char()
+        {
+            char charOutput;
+            while (!char.TryParse(System.Console.ReadLine().ToLower().Trim(), out charOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return charOutput;
+        }       
+        /// <summary>
+        /// Return parsed number(string) DECIMAL
+        /// </summary>
+        /// <returns>number(string) DECIMAL (+-1.0 * 10−28 - +-7.9 * 1028  -  accuracy: 28-29 numbers)</returns>
+        public static decimal Decimal()
+        {
+            decimal decimalOutput;
+            while (!decimal.TryParse(System.Console.ReadLine().ToLower().Trim(), out decimalOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return decimalOutput;
+        }       
+        /// <summary>
+        /// Return parsed value BOOLEAN
+        /// </summary>
+        /// <returns>value BOOLEAN (true nebo false  -  8bit)</returns>
+        public static bool Bool()
+        {
+            bool boolOutput;
+            while (!bool.TryParse(System.Console.ReadLine().ToLower().Trim(), out boolOutput))
+                System.Console.Write("Invalid input, please try it again:");
+            return boolOutput;
+        } 
+        
+        
+    }
